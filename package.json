@@ -1,0 +1,13 @@
+{
+  "name": "utopia-guide",
+  "version": "0.0.1",
+  "description": "Utopia Guide",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-sass": "~2.3.1",
+    "gulp-uglify": "~1.5.3",
+    "gulp-watch": "~4.3.5"
+  }
+}

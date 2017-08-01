@@ -1,0 +1,149 @@
+@import "variables";
+@import "fonts";
+@import "functions";
+@import "mixins";
+@import "reset";
+
+
+//  ==========================================================================
+//  General
+//  ==========================================================================
+body {background:#000 url('images/dark-wood-horizontal.png'); margin:0; font-family:Arial, Helvetica, Sans-serif;}
+h1 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+h2 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+h3 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+h4 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+h5 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+h6 {font-family: 'Fondamento', cursive; color:#912f24; text-shadow:1px 1px rgba(0,0,0,0.3);}
+
+
+//  ==========================================================================
+//  Classes
+//  ==========================================================================
+.container {max-width:1200px; margin:0 auto !important;}
+.clear {clear:both;}
+.button {padding:10px 20px; background:transparent; border:2px solid #514233; border-radius:15px; text-transform:uppercase; color:#fff; text-decoration:none}
+.button.wax {background:url('images/wax-seal.png') no-repeat; background-size:100% auto; width:120px; border:none; height:120px !important; line-height:22px !important; padding:0; display:inline-block; text-align:center; font-size:14px; box-sizing:border-box; padding:38px 30px 30px; color:#460101 !important; text-shadow: 1px 1px 1px #9a5a5a !important; transition:transform .4s !important;
+	&:hover {transform:rotate(15deg) scale(1.1);}
+}
+.initial {font-family:'Rye'; font-size:140px; color:#981c21; float:left; line-height:115px; margin-right:20px; position:relative; top:-20px; background-size:200% auto; position:relative;}
+
+//  ==========================================================================
+//  Layout
+//  ==========================================================================
+header {color:#fff; position:relative; z-index:2;}
+main {line-height:24px; background:#ffe4be url('images/background2.png') no-repeat center top; background-size:100% auto; color:#333333; padding:40px; box-sizing:border-box; min-height:890px;}
+
+footer {background:transparent; /*border-top:5px solid #912f24;*/ height:120px; line-height:120px;
+	a {color:#cbb997; text-decoration:none;
+		i {margin-right:5px;}
+	}
+	.button {margin:0 20px; vertical-align:middle;}
+	img {vertical-align:middle;}
+	.social {float:right; list-style:none; margin:42px 0 0; padding:0; vertical-align:middle;
+		li {float:left; margin-left:5px; width:36px; height:36px; line-height:36px; text-align:center; background:blue;}
+		li.facebook {background:#527bbd;}
+		li.twitter {background:#63cbf4;}
+		li.youtube {background:#f76363;}
+		li a {color:#fff;}
+	}
+}
+
+/* Utopia navigation */
+#utopia-nav ul {padding:0; margin:0; list-style:none; height:160px; line-height:160px;
+	&:after {content:''; display:table; clear:both;}
+	li {float:left; display:block; margin:0 20px; position:relative;
+		&:first-child {margin-left:0; margin-right:164px;}
+		a {color:#fff; text-decoration:none; position:relative; transition:color .4s;} 
+		&.active a, a:hover {color:#d0b14e}
+		a img {height:auto; width:auto; position:relative; top:20px;}
+		&:last-child {float:right;}
+	}
+}
+
+/* Guide navigation */
+header .fa-bars {display:none;}
+#guide-nav {
+	.container {position:relative; background:url('images/background2.png') center -40px; background-size:100% auto; box-shadow:inset 0 0 40px 8px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.8);}
+	.container:before {content:''; position:absolute; width:40px; height:140px; top:-24px; left:-40px; border-radius:10px; box-shadow:inset 0 0 10px rgba(0,0,0,0.8); 
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/	gradient-editor/#d4b280+0,98601b+67,71381d+100 */
+		background: rgb(212,178,128); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(212,178,128,0.4) 0%, rgba(152,96,27,0.4) 67%, rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(212,178,128,0.4) 0%,rgba(152,96,27,0.4) 67%,rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* Chrome10-25,Safari5.1-6 */
+		background:radial-gradient(ellipse at center,  rgba(212,178,128,0.4) 0%,rgba(152,96,27,0.4) 67%,rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4b280', endColorstr='#71381d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background-size:auto 100%;
+		}
+	.container:after {content:''; position:absolute; width:40px; height:140px; top:-24px; right:-40px; border-radius:10px; box-shadow:inset 0 0 10px rgba(0,0,0,0.8);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4b280+0,98601b+67,71381d+100 */
+		background: rgb(212,178,128); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(212,178,128,0.4) 0%, rgba(152,96,27,0.4) 67%, rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(212,178,128,0.4) 0%,rgba(152,96,27,0.4) 67%,rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  rgba(212,178,128,0.4) 0%,rgba(152,96,27,0.4) 67%,rgba(113,56,29,0.4) 100%), url('images/leather-texture.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4b280', endColorstr='#71381d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background-size:auto 100%;
+	}
+	.fa-close {display:none;}
+	ul {padding:0; margin:0; list-style:none; text-align:center;
+		&:after {content:''; display:table; clear:both;}
+		li {float:none; display:inline-block; padding:4px 0;
+			a {color:#000; text-decoration:none; height:80px; line-height:80px; padding:0 10px; display:block; font-family:Fondamento;}
+			&:first-child a {border:none;}
+			ul {display:none; position:absolute; margin-top:4px; box-shadow:0 1px 10px rgba(0,0,0,0.5); z-index:3;}
+			&:hover {background:rgba(0,0,0,0.2);}
+			&:hover ul {display:block; text-align:left;}
+			ul li, ul li:hover {float:none; display:block; background:rgba(0,0,0,0.9); padding:0;}
+			ul li a {border:none; color:#fff; padding:16px 20px; border-top:1px solid rgba(255,255,255,0.5); height:auto; line-height:18px; transition:color .4s;}
+			ul li a:hover {color:#912f23;}
+		}
+	}
+}
+
+.fixed-nav #guide-nav {position:fixed; top:0; left:0; width:100%;}
+.fixed-nav main {padding-top:120px;}
+
+main img {max-width:100%;}
+
+@media only screen and (max-width : 767px) {
+	.fixed-nav #guide-nav {width:85%; left:auto;}
+	.fixed-nav main {padding-top:40px;}
+	header {height:40px;}
+	#utopia-nav ul li {height:30px; line-height:30px; display:none;}
+	#utopia-nav ul li:first-child {display:block;}
+	#utopia-nav ul li a img {position:relative; top:5px; left:5px; height:30px;}
+	header .fa-bars {display:block; float:right; margin:5px 5px 0 0; font-size:30px;}
+	#guide-nav {position:fixed; padding-top:10px; top:0; right:-100%; width:85%; height:100%; background:#37342e; transition:right .6s;}
+	#guide-nav .container {background:none; box-shadow:none;}
+	#guide-nav .container:before, #guide-nav .container:after {display:none;}
+	#guide-nav.open {right:0;}
+	#guide-nav .fa-close {display:block; position:absolute; top:15px; right:15px; font-size:40;}
+	#guide-nav ul {text-align:left;}
+	#guide-nav ul li {float:none; display:block;}
+	#guide-nav ul li a {padding:0 20px; height:40px; line-height:40px; border-left:none; color:#fff;}
+	#guide-nav ul li:hover ul {display:none;}
+
+	footer {text-align:center; height:auto; padding-bottom:40px; padding-top:40px;}
+	footer img {display:block; margin:0 auto;}
+	footer a:not(.button) {display:block; line-height:20px;}
+	footer .social {float:none; width:100%; line-height:30px;}
+	footer .social li {float:none; display:inline-block;}
+	footer .social li a {line-height:36px;}
+}
+
+//  ==========================================================================
+//  Print Styles
+//  ==========================================================================
+@media print {
+	* { background:transparent !important; color:#000 !important; box-shadow:none !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important; } /* Black prints faster:h5bp.com/s */
+	a, a:visited { text-decoration:underline; }
+	a[href]:after { content:" (" attr(href) ")"; }
+	abbr[title]:after { content:" (" attr(title) ")"; }
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }  /* Don't show links for images, or javascript/internal links */
+	pre, blockquote { border:1px solid #999; page-break-inside:avoid; }
+	thead { display:table-header-group; } /* h5bp.com/t */
+	tr, img { page-break-inside:avoid; }
+	img { max-width:100% !important; }
+	@page { margin:0.5cm; }
+	p, h2, h3 { orphans:3; widows:3; }
+	h2, h3 { page-break-after:avoid; }
+}
