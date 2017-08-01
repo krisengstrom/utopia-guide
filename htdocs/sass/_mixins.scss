@@ -25,12 +25,11 @@
 // 	&:after {left:100%;}
 // }
 
-// Media Queries - Simplified
 @mixin breakpoint($point) {
-	@if $point == tablet {
-		@media only screen and (min-width: 768px) { @content; }
+	@if $point == mobile {
+		@media only screen and (max-width: 767px) { @content; }
 	}
-	@else if $point == desktop {
-		@media only screen and (min-width : 1024px) { @content; }
+	@else if $point == tablet {
+		@media only screen and (max-width : 1024px) { @content; }
 	}
 }
