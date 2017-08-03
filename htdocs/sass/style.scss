@@ -8,13 +8,41 @@
 //  ==========================================================================
 //  General
 //  ==========================================================================
-body {background:#000 url('images/dark-wood-horizontal.png'); margin:0; font-family:Arial, Helvetica, Sans-serif;}
-h1 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
-h2 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
-h3 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
-h4 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
-h5 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
-h6 {font-family: 'Fondamento', cursive; color:$red; text-shadow:1px 1px rgba(0,0,0,0.3);}
+body {
+	background:#000 url('images/dark-wood-horizontal.png'); 
+	margin:0; 
+	font-family:Arial, Helvetica, Sans-serif;
+}
+h1 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
+h2 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
+h3 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
+h4 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
+h5 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
+h6 {
+	font-family: 'Fondamento', cursive; 
+	color:$red; 
+	text-shadow:1px 1px rgba(0,0,0,0.3);
+}
 
 
 //  ==========================================================================

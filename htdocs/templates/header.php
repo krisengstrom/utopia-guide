@@ -52,6 +52,10 @@
 							<li><a href="04politics.html#3">Communications within your Kingdom</a></li>
 							<li><a href="04politics.html#4">Recruitment</a></li>
 							<li><a href="04politics.html#5">Aid</a></li>
+							<li><a href="12stance.html">Stances &amp; Relations</a></li>
+							<li><a href="12stance.html#1">Stances</a></li>
+							<li><a href="12stance.html#2">The Hostile Meter</a></li>
+							<li><a href="12stance.html#3">Going to War</a></li>
 						</ul>
 					</li>
 					<li><a href="05people.html">Growth</a>
@@ -74,10 +78,6 @@
 							<li><a href="06military.html#2">Training your Military</a></li>
 							<li><a href="06military.html#3">Paying your Army</a></li>
 							<li><a href="06military.html#4">The Military Advisor</a></li>
-						</ul>
-					</li>
-					<li><a href="07war.html">War Room</a>
-						<ul>
 							<li><a href="07war.html#1">Attack Types</a></li>
 							<li><a href="07war.html#2">Target Finding</a></li>
 							<li><a href="07war.html#3">Attacking your Enemy</a></li>
@@ -108,13 +108,6 @@
 							<li><a href="11dragon.html#1">Dragon Types</a></li>
 							<li><a href="11dragon.html#2">Funding a Dragon</a></li>
 							<li><a href="11dragon.html#3">Killing a Dragon</a></li>
-						</ul>
-					</li>
-					<li><a href="12stance.html">Stances &amp; Relations</a>
-						<ul>
-							<li><a href="12stance.html#1">Stances</a></li>
-							<li><a href="12stance.html#2">The Hostile Meter</a></li>
-							<li><a href="12stance.html#3">Going to War</a></li>
 						</ul>
 					</li>
 					<li><a href="13account.html">Settings</a>
