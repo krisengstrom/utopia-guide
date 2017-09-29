@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="UtopiaGuide">
+	<head>
+		<base href="http://dev.engstrom.com.au/utopia-guide/">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+		<title>Utopia Guide</title>
+		<link href="https://fonts.googleapis.com/css?family=Fondamento|Rye" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body ng-controller="MainController">
+		<header id="top">
+			<span class="fa fa-bars" ng-click="openNav()"></span>
+			<nav id="utopia-nav">
+				<ul class="container">
+					<li><a href="/utopia-guide/"><img src="images/utopia-logo.png" alt="Utopia Logotype"></a></li>
+					<li class="active"><a href="/utopia-guide/">Guide</a></li>
+					<li><a target="_blank" href="http://wiki.utopia-game.com/index.php?title=Game_Rules">Rules</a></li>
+					<li><a target="_blank" href="http://wiki.utopia-game.com">Wiki</a></li>
+					<li><a target="_blank" href="http://forums.utopia-game.com/forum.php">Forum</a></li>
+					<li><a target="_blank" href="http://blog.utopia-game.com/">Blog</a></li>
+					<li><a target="_blank" href="http://utopia-game.com/" class="button wax">Play Utopia</a></li>
+				</ul>
+			</nav>
+			<nav id="guide-nav" ng-class="{open : navStateOpen}">
+				<span class="fa fa-close" ng-click="closeNav()"></span>
+				<ul class="container">
+					<li><a href="/utopia-guide/">Home</a></li>
+					<li class="active"><a href="overview/">Overview</a>
+						<ul>
+							<li><a href="overview/#basic-geography">Basic Geography</a></li>
+							<li><a href="overview/#time">Time</a></li>
+							<li><a href="overview/#3">Currency</a></li>
+							<li><a href="overview/#4">Races</a></li>
+							<li><a href="overview/#5">Personalities</a></li>
+							<li><a href="overview/#6">Acronyms</a></li>
+						</ul>
+					</li>
+					<li><a href="quick-start/">Quick Start</a>
+						<ul>
+							<li><a href="quick-start/#1">Choosing your Race/Personality</a></li>
+							<li><a href="quick-start/#2">Building your Province</a></li>
+							<li><a href="quick-start/#3">Training your Military</a></li>
+							<li><a href="quick-start/#4">Introducing Yourself</a></li>
+						</ul>
+					</li>
+					<li><a href="politics/">Politics</a>
+						<ul>
+							<li><a href="politics/#1">Choosing a leader</a></li>
+							<li><a href="politics/#2">Stewardship</a></li>
+							<li><a href="politics/#3">Communications within your Kingdom</a></li>
+							<li><a href="politics/#4">Recruitment</a></li>
+							<li><a href="politics/#5">Aid</a></li>
+							<li><a href="politics/#6">Stances</a></li>
+							<li><a href="politics/#7">The Hostile Meter</a></li>
+							<li><a href="politics/#8">Going to War</a></li>
+						</ul>
+					</li>
+					<li><a href="growth/">Growth</a>
+						<ul>
+							<li><a href="growth/#1">Your People</a></li>
+							<li><a href="growth/#2">Employment</a></li>
+							<li><a href="growth/#3">Taxes</a></li>
+							<li><a href="growth/#4">The State Advisor</a></li>
+							<li><a href="growth/#5">Building Efficiency</a></li>
+							<li><a href="growth/#6">Exploration</a></li>
+							<li><a href="growth/#7">Construction</a></li>
+							<li><a href="growth/#8">Buildings and their effects</a></li>
+							<li><a href="growth/#9">The Building Advisor</a></li>
+							<li><a href="growth/#10">Honor and Ranks</a></li>
+						</ul>
+					</li>
+					<li><a href="military/">Military</a>
+						<ul>
+							<li><a href="military/#1">Drafting Soldiers</a></li>
+							<li><a href="military/#2">Training your Military</a></li>
+							<li><a href="military/#3">Paying your Army</a></li>
+							<li><a href="military/#4">The Military Advisor</a></li>
+							<li><a href="07war.html#1">Attack Types</a></li>
+							<li><a href="07war.html#2">Target Finding</a></li>
+							<li><a href="07war.html#3">Attacking your Enemy</a></li>
+							<li><a href="07war.html#4">Attacking your Friends</a></li>
+						</ul>
+					</li>
+					<li><a href="thievery/">Thievery</a>
+						<ul>
+							<li><a href="thievery/#1">Using your Thieves</a></li>
+							<li><a href="thievery/#2">Thief Operations</a></li>
+						</ul>
+					</li>
+					<li><a href="magic/">Magic</a>
+						<ul>
+							<li><a href="magic/#1">Wizards and Guilds</a></li>
+							<li><a href="magic/#2">Self Spells</a></li>
+							<li><a href="magic/#3">Sorcery</a></li>
+						</ul>
+					</li>
+					<li><a href="science/">Science</a>
+						<ul>
+							<li><a href="science/#1">Scientists</a></li>
+							<li><a href="science/#2">The Arts and Sciences</a></li>
+						</ul>
+					</li>
+					<li><a href="dragons-and-rituals/">Dragons &amp; Rituals</a>
+						<ul>
+							<li><a href="dragons-and-rituals/#1">Dragon Types</a></li>
+							<li><a href="dragons-and-rituals/#2">Funding a Dragon</a></li>
+							<li><a href="dragons-and-rituals/#3">Killing a Dragon</a></li>
+						</ul>
+					</li>
+					<li><a href="account/">Account</a>
+						<ul>
+							<li><a href="account/#1">Lobby</a></li>
+							<li><a href="account/#2">Game Account</a></li>
+							<li><a href="account/#3">Province Settings</a></li>
+							<li><a href="account/#4">Bug Reporting</a></li>
+							<li><a href="account/#5">Abuse Reporting</a></li>
+							<li><a href="account/#6">Province Settings</a></li>
+							<li><a href="account/#7">Premium Features</a></li>
+						</ul>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+		</header>
+		<main class="container" ng-view></main>
+		<footer>
+			<div class="container">
+				<img src="images/utopia_small.png">
+				<a href="http://utopia-game.com/" target="_blank" class="button">Play Utopia</a>
+				<a href="special-thanks/"><i class="fa fa-caret-right"></i>Special Thanks</a>
+				<ul class="social">
+					<li class="facebook"><a href="https://www.facebook.com/Utopia-Game-149314088438349/" target="_blank" class="fa fa-facebook"></a></li>
+					<li class="twitter"><a href="https://twitter.com/UtopiaClassic" target="_blank" class="fa fa-twitter"></a></li>
+					<li class="youtube"><a href="https://www.youtube.com/channel/UCibCkmjfwJJm1-nZgGEFzUQ" target="_blank" class="fa fa-youtube"></a></li>
+				</ul>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/min/lib.min.js"></script>
+		<script type="text/javascript" src="js/min/app.min.js"></script>
+	</body>
+</html>

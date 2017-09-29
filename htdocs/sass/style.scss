@@ -22,6 +22,7 @@ h2 {
 	font-family: 'Fondamento', cursive; 
 	color:$red; 
 	text-shadow:1px 1px rgba(0,0,0,0.3);
+	margin: 2em 0 .9em 0;
 }
 h3 {
 	font-family: 'Fondamento', cursive; 
@@ -94,6 +95,7 @@ h6 {
 	background-size:200% auto; 
 	position:relative;
 }
+.red {color:$red}
 
 //  ==========================================================================
 //  Layout
@@ -113,6 +115,16 @@ main {
 	padding:40px; 
 	box-sizing:border-box; 
 	min-height:890px;
+
+	a {
+		color:$red; 
+		text-decoration:none;
+		border-bottom:1px solid $red;
+		outline:none;
+	}
+	>h2:first-child {
+		margin-top:0;
+	}
 }
 footer {
 	background:transparent; 
@@ -141,15 +153,17 @@ footer {
 		li {
 			float:left; 
 			margin-left:5px; 
-			width:36px; 
-			height:36px; 
-			line-height:36px; 
-			text-align:center; 
-			background:blue;
+			a {
+				color:#fff;
+				display:block;
+				width:36px; 
+				height:36px; 
+				line-height:36px; 
+				text-align:center; 
+			}
 			&.facebook {background:#527bbd;}
 			&.twitter {background:#63cbf4;}
 			&.youtube {background:#f76363;}
-			a {color:#fff;}
 		}
 	}
 @include breakpoint(mobile) {
@@ -409,7 +423,7 @@ header .fa-bars {
 		width:100%;
 	}
 	main {
-		padding-top:120px;
+		margin-top:88px !important;
 	}
 @include breakpoint(mobile) {
 	#guide-nav {

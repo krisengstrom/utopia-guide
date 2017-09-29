@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /utopia-guide/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([-_a-z0-9]+)/?$ http://google.com.au?test=$1 [NE,L,R=301]
+RewriteRule ^([-_a-z0-9]+)/?$ /utopia-guide/#!/$1 [L,R=301,NE]
