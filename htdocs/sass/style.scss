@@ -139,6 +139,11 @@ main {
 	>h2:first-child {
 		margin-top:0;
 	}
+	img {
+		float:right;
+		margin:0 0 20px 20px;
+		max-width:40%;
+	}
 }
 footer {
 	background:transparent; 
@@ -456,12 +461,12 @@ header .fa-bars {
 	}
 	main {
 		padding-top:40px;
+
+		img {
+			max-width:100%;
+		}
 	}
 }}
-
-main img {
-	max-width:100%;
-}
 
 //  ==========================================================================
 //  Print Styles

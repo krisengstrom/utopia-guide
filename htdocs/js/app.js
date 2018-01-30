@@ -6,7 +6,7 @@ var app = angular.module('UtopiaGuide', ['duScroll', 'ngRoute', 'guideController
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'views/index.html'
+			templateUrl: 'views/overview.html'
 		})
 		.when('/overview/', {
 			templateUrl: 'views/overview.html'

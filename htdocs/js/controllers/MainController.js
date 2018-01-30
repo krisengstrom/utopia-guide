@@ -1,4 +1,4 @@
-controllers.controller('MainController', ['$scope', '$document', function ($scope, $document) {
+controllers.controller('MainController', ['$scope', '$document', '$location', function ($scope, $document, $location) {
 
 	$scope.navStateOpen = false;
 
@@ -11,23 +11,34 @@ controllers.controller('MainController', ['$scope', '$document', function ($scop
 	});
 
 	$scope.$on('$viewContentLoaded', function(){
-		$scope.scrollTo('top');
-	});
 
-	$scope.scrollTo = function(id, callback) {
-		var rect = document.getElementById(id).getBoundingClientRect();
-		$document.scrollTop(rect.y, 500).then(function() {
-			if (typeof callback == 'function') {
-				callback();
-			}
-		});
-	}
+		$scope.closeNav();
+
+		$scope.queryStringParams = $location.search();
+
+		if ($scope.queryStringParams.hasOwnProperty('section')) {
+			var e = angular.element(document.getElementById('section-' + $scope.queryStringParams.section));
+			$document.scrollToElementAnimated(e, 110);
+		} else {
+			$document.scrollTo('top');
+		}
+
+	});
 
 	$scope.setNavPosition = function() {
 		if ($document.scrollTop() >= 160) {
 			$document.find('body').addClass('fixed-nav');
 		} else {
 			$document.find('body').removeClass('fixed-nav');
+		}
+
+		console.log($scope.queryStringParams);
+
+		if ($scope.queryStringParams.hasOwnProperty('section')) {
+			console.log($scope.queryStringParams.section);
+			console.log('.section-' + $scope.queryStringParams.section);
+			console.log(document.getElementById('section-' + $scope.queryStringParams.section));
+
 		}
 	}
 
