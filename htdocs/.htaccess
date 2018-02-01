@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /utopia-guide/
+RewriteBase /guide/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([-_a-z0-9]+)/?$ /utopia-guide/#!/$1 [L,R=301,NE]
+RewriteRule ^([-_a-z0-9]+)/?$ /guide/#!/$1 [L,R=301,NE]
